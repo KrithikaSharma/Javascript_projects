@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div class="container">
+           <input type="text" id="input" placeholder="0" disabled>
+            <input type="text" id="result" placeholder="0" disabled>
+           </div>
+           <div class="myc">
+            <table>
+                <tr>
+                    <td onclick="cal('(')">(</td>
+                    <td onclick="cal(')')">)</td>
+                    <td onclick="remove()">&lt;-</td>
+                    <td onclick="cal('+')" class="lbuttons">+</td>
+                </tr>
+                <tr>
+                    <td onclick="cal('7')">7</td>
+                    <td onclick="cal('8')">8</td>
+                    <td onclick="cal('9')">9</td>
+                    <td onclick="cal('-')" class="lbuttons">-</td>
+                </tr>
+                <tr>
+                    <td onclick="cal('4')">4</td>
+                    <td onclick="cal('5')">5</td>
+                    <td onclick="cal('6')">6</td>
+                    <td onclick="cal('*')" class="lbuttons">*</td>
+                </tr>
+                <tr>
+                    <td onclick="cal('1')">1</td>
+                    <td onclick="cal('2')">2</td>
+                    <td onclick="cal('3')">3</td>
+                    <td onclick="cal('/')" class="lbuttons">/</td>
+                </tr>
+                <tr>
+                    <td onclick="reset()"><b>C</b></td>
+                    <td onclick="cal('0')">0</td>
+                    <td onclick="cal('.')">.</td>
+                    <td onclick="tot()" class="eqlbtn">=</td>
+                </tr>
+            </table>
+           </div>
+        <!--<table>
+            <tr>
+                <td onclick="cal('(')">(</td>
+                <td onclick="cal(')')">)</td>
+                <td onclick="remove()">&lt;-</td>
+                <td onclick="cal('+')" class="lbuttons">+</td>
+            </tr>
+            <tr>
+                <td onclick="cal('7')">7</td>
+                <td onclick="cal('8')">8</td>
+                <td onclick="cal('9')">9</td>
+                <td onclick="cal('-')" class="lbuttons">-</td>
+            </tr>
+            <tr>
+                <td onclick="cal('4')">4</td>
+                <td onclick="cal('5')">5</td>
+                <td onclick="cal('6')">6</td>
+                <td onclick="cal('*')" class="lbuttons">*</td>
+            </tr>
+            <tr>
+                <td onclick="cal('1')">1</td>
+                <td onclick="cal('2')">2</td>
+                <td onclick="cal('3')">3</td>
+                <td onclick="cal('/')" class="lbuttons">/</td>
+            </tr>
+            <tr>
+                <td onclick="reset()"><b>C</b></td>
+                <td onclick="cal('0')">0</td>
+                <td onclick="cal('.')">.</td>
+                <td onclick="tot()" class="eqlbtn">=</td>
+            </tr>
+        </table>-->
+    </body>
+    <script src="./script.js"></script>
+</html>
